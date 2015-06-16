@@ -123,7 +123,7 @@ Otherwise, uses the user's preferred expansion function to expand
 the text at point."
   (unless (or (consp prefix)
               (use-region-p))
-    (looking-at "\\_>")))
+    (looking-at-p "\\_>")))
 
 (defun smart-tab-default ()
   "Indent region if mark is active, or current line otherwise."
